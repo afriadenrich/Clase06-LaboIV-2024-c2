@@ -6,12 +6,12 @@ import {
 } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MuyLargoPipe } from './pipes/muy-largo.pipe';
-import { HighlightDirective } from './directives/highlight.directive';
-import { FechaPipe } from './pipes/fecha.pipe';
+import { MuyLargoPipe } from '../../pipes/muy-largo.pipe';
+import { HighlightDirective } from '../../directives/highlight.directive';
+import { FechaPipe } from '../../pipes/fecha.pipe';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-pipes-directivas',
   standalone: true,
   imports: [
     RouterOutlet,
@@ -23,10 +23,10 @@ import { FechaPipe } from './pipes/fecha.pipe';
     HighlightDirective,
     FechaPipe,
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  templateUrl: './pipes-directivas.component.html',
+  styleUrl: './pipes-directivas.component.css',
 })
-export class AppComponent {
+export class PipesDirectivasComponent {
   title = 'pipes-directivas-2024';
   precio = 10000;
   fecha = new Date();

@@ -1,0 +1,20 @@
+<router-outlet />
+
+<h1>Pipes</h1>
+
+<p>{{ title | titlecase }}</p>
+<p>{{ precio | currency : "ARS" : "$" }}</p>
+<p>{{ fecha | date : "dd-MM-yyyy - ss:mm:hh" }}</p>
+<p>{{ datos | json }}</p>
+
+<p>{{ texto | muyLargo }}</p>
+<p>{{ "Hola" | muyLargo }}</p>
+<p appHighlight color="purple">
+  {{ "Hola mundo como están" | muyLargo : 15 : " [VER MÁS]" }}
+</p>
+
+<div appHighlight color="green">Verde</div>
+<div appHighlight color="green">Verde</div>
+<div appHighlight color="green" ngNonBindable>{{ texto }}</div>
+
+<p>{{ "2024-10-24 09:50:30" | fecha }}</p>
